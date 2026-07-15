@@ -1,64 +1,182 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    <title>Forms</title>
-    </head>
-    <body>
-        <h3>Form Element</h3>
-        <form action="#" method="#">
-            <label for="fname">First Name</label><br>
-            <input type="text" id="fname" name="fname" placeholder="vayyana"><br>
-            <label for="lname">Last Name</label><br>
-            <input type="text" id="lname" name="lname" placeholder="sankar"><br>
-            <label for="age">Age</label><br>
-            <input type="text" id="age" name="age" placeholder="25"><br>
-            <label for="gender">Gender</label><br>
-            <input type="radio" id="male" name="gender" >
-            <label for="male">male</label><br>
-            <input type="radio" id="female" name="gender" >
-            <label for="female">female</label><br>
+<head>
+    <title>Employee Registration</title>
+    <link rel="stylesheet" href="newdesign.css">
+</head>
 
-            <label for="Select Option">Desigination</label><br>
-            <input type="checkbox" id="python" name="Select Option" >
-            <label for="pythonfullstackdeveloper">Python Full stack developer</label><br>
-            <input type="checkbox" id="java" name="gender" >
-            <label for="java">java Full Stack Developer</label><br>       
-            <br><button type="submit">Submit</button>     
-        </form><br>
-        <b>This are the from element to get data from the users</b><hr>
-        
-        <h3>About Company</h3>
-        <table border="4">
-            <tr>
-                <th>Company</th>
-                <th>Contact</th>
-                <th>Country</th>
-                <th>Branch</th>
-                <th>company Link</th>
-            </tr>
-            <tr>
-                <td>TheStackly</td>
-                <td>00487956</td>
-                <td>India</td>
-                <td>Salam</td>
-                <td><a href="https://thestackly.com/">Thestackly</a></td>
-            </tr>
-            <tr>
-                <td>TheStackly</td>
-                <td>00423566</td>
-                <td>India</td>
-                <td>Bangalore</td>
-                <td><a href="https://thestackly.com/">Thestackly</a></td>
-            </tr>
-        </table><hr>
+<body>
 
-        <label>TEAM Member</label>
-        <ol>
+    <h1>Welcome to TheStackly</h1>
+
+    <p>
+        TheStackly provides training and placement support in Full Stack
+        Development, Cloud Computing, and DevOps.
+    </p>
+
+    <hr>
+
+    <!-- Navigation -->
+    <a href="#">Home</a> |
+    <a href="#">About</a> |
+    <a href="#">Courses</a> |
+    <a href="#">Contact</a>
+
+    <hr>
+
+    <!-- Image -->
+    <img src="company-logo.jpg" alt="Company Logo" width="200">
+
+    <h2>Employee Registration Form</h2>
+
+    <form action="#" method="post">
+
+        <label for="fname">First Name</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Enter First Name"><br><br>
+
+        <label for="lname">Last Name</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Enter Last Name"><br><br>
+
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter Email"><br><br>
+
+        <label for="phone">Phone Number</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="9876543210"><br><br>
+
+        <label for="password">Password</label><br>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="age">Age</label><br>
+        <input type="number" id="age" name="age"><br><br>
+
+        <label>Date of Birth</label><br>
+        <input type="date"><br><br>
+
+        <label>Gender</label><br>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br><br>
+
+        <label>Skills</label><br>
+
+        <input type="checkbox" id="html">
+        <label for="html">HTML</label><br>
+
+        <input type="checkbox" id="css">
+        <label for="css">CSS</label><br>
+
+        <input type="checkbox" id="python">
+        <label for="python">Python</label><br><br>
+
+        <label for="course">Select Course</label><br>
+
+        <select id="course">
+            <option>Python Full Stack</option>
+            <option>Java Full Stack</option>
+            <option>Cloud Computing</option>
+            <option>DevOps</option>
+        </select>
+
+        <br><br>
+
+        <label for="address">Address</label><br>
+
+        <textarea id="address" rows="4" cols="30"></textarea>
+
+        <br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+    <hr>
+
+    <h2>About Our Company</h2>
+
+    <p>
+        TheStackly is a software training institute that offers industry-ready
+        courses with real-time projects and placement assistance.
+    </p>
+
+    <h3>Company Branches</h3>
+
+    <table border="1" cellpadding="8">
+
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+            <th>Branch</th>
+            <th>Website</th>
+        </tr>
+
+        <tr>
+            <td>TheStackly</td>
+            <td>00487956</td>
+            <td>India</td>
+            <td>Salem</td>
+            <td>
+                <a href="https://thestackly.com/" target="_blank">
+                    Visit Website
+                </a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>TheStackly</td>
+            <td>00423566</td>
+            <td>India</td>
+            <td>Bangalore</td>
+            <td>
+                <a href="https://thestackly.com/" target="_blank">
+                    Visit Website
+                </a>
+            </td>
+        </tr>
+
+    </table>
+
+    <hr>
+
+    <h3>Our Services</h3>
+
+    <ul>
+        <li>HTML & CSS Training</li>
+        <li>Python Full Stack</li>
+        <li>Java Full Stack</li>
+        <li>Cloud Computing</li>
+        <li>Interview Preparation</li>
+    </ul>
+
+    <h3>Team Members</h3>
+
+    <ol>
         <li>Ram</li>
         <li>Sundar</li>
-        </ol>
-        <h4>Thank You</h4>
-        <img src="C:\Users\vayya\OneDrive\Documents\Desktop\a11111111.avif" alt="Italian Trulli">
-        
-    </body>
+        <li>Kumar</li>
+        <li>Priya</li>
+    </ol>
+
+    <hr>
+
+    <h3>Contact Us</h3>
+
+    <p><strong>Email:</strong> info@thestackly.com</p>
+    <p><strong>Phone:</strong> +91 9876543210</p>
+    <p><strong>Address:</strong> Salem, Tamil Nadu, India</p>
+
+    <hr>
+
+    <img src="company-logo.jpg" alt="Company Image" width="250">
+
+    <h4>Thank You for Visiting Our Website!</h4>
+
+    <footer>
+        <p>&copy; 2026 TheStackly. All Rights Reserved.</p>
+    </footer>
+
+</body>
 </html>
